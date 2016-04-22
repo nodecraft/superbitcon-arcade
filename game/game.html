@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+		<title>Game</title>
+		<link href="normalize.css" rel="stylesheet" type="text/css" />
+		<link href="style.css?3-23-16" rel="stylesheet" type="text/css" />
+	</head>
+	<body>
+		<div id="page">
+			<div id="sponsorship"></div>
+			<img src="images/puzzle-img1.png" id="puzzle_1" class="puzzleImg" />
+			<img src="images/puzzle-img2.png" id="puzzle_2" class="puzzleImg" />
+			<img src="images/puzzle-img3.png" id="puzzle_3" class="puzzleImg" />
+			<img src="images/puzzle-img4.png" id="puzzle_4" class="puzzleImg" />
+			<img src="images/puzzle-img5.png" id="puzzle_5" class="puzzleImg" />
+			<div id="puzzleBg"></div>
+			<div id="game">
+				<div id="title">
+					<img id="logo" src="images/title.png">
+					<span id="hint">Press spacebar to start</span>
+				</div>
+				<div id="stage">
+					<div id="board">
+						<div id="sprite"></div>
+						<div id="map"></div>
+					</div>
+				</div>
+				<div id="goal" class="titles poly"><img src="images/goal.png" /></div>
+				<div id="points" class="titles poly"><img src="images/points.png" /></div>
+				<div id="pop-quiz" class="titles poly"><img src="images/pop-quiz.png" /></div>
+				<div id="video-challenge" class="titles poly"><img src="images/video-challenge.png" /></div>
+				<div id="prize" class="titles poly"><img src="images/prize.png" /></div>
+				<div id="puzzle" class="titles poly"><img src="images/puzzle.png" /></div>
+				<div id="enemy" class="titles bg"><img src="images/enemy.png" /></div>
+			</div>
+		</div>
+		<div hidden>
+			<audio class="sound" id="title_theme" src="sfx/nick-arcade-full-theme.mp3" autoplay loop></audio>
+			<audio class="sound" id="travel" src="sfx/travel.mp3" loop></audio>
+			<audio class="sound" id="travel_stop" src="sfx/travel-stop.mp3"></audio>
+			<audio class="sound" id="titles_pop-quiz" src="sfx/popquiz.mp3"></audio>
+			<audio class="sound" id="titles_enemy" src="sfx/enemy.mp3"></audio>
+
+			<img src="sprites/down_1.png" hidden />
+			<img src="sprites/down_2.png" hidden />
+			<img src="sprites/down_3.png" hidden />
+
+			<img src="sprites/up_1.png" hidden />
+			<img src="sprites/up_2.png" hidden />
+			<img src="sprites/up_3.png" hidden />
+
+			<img src="sprites/left_1.png" hidden />
+			<img src="sprites/left_2.png" hidden />
+			<img src="sprites/left_3.png" hidden />
+
+			<img src="sprites/right_1.png" hidden />
+			<img src="sprites/right_2.png" hidden />
+			<img src="sprites/right_3.png" hidden />
+		</div>
+		<script type="text/javascript" src="jquery-1.11.3.min.js"></script>
+		<script type="text/javascript" src="game.js?3-16-16"></script>
+	</body>
+</html>

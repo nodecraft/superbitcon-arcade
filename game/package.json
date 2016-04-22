@@ -1,0 +1,20 @@
+{
+	"name": "superbitcon",
+	"version": "1.0.0",
+	"node-main": "app.js",
+	"main": "index.html",
+	"window": {
+		"title": "SuperBitcon",
+		"toolbar": false,
+		"position": "center",
+		"kiosk": true,
+		"resizable": false
+	},
+	"inject-js-end": "injected.js",
+	"webkit": {
+		"page-cache": true,
+		"plugin": false,
+		"java": false
+	},
+	"chromium-args": "--disable-bundled-ppapi-flash"
+}

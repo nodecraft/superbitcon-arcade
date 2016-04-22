@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+	<html>
+	<head>
+		<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+		<title>Press any button to continue</title>
+		<link href="normalize.css" rel="stylesheet" type="text/css" />
+		<link href="style.css?3-15-16" rel="stylesheet" type="text/css" />
+	</head>
+	<body>
+	<div id="welcome">
+		<img src="images/icon.png" />
+		<h1>Please stand by.<br/>We will be starting soon!</h1>
+	</div>
+	<script type="text/javascript" src="jquery-1.11.3.min.js"></script>
+	<script type="text/javascript">
+		$(function(){
+			$(window).keydown(function(e){
+				window.location = "game.html";
+			});
+		});
+	</script>
+	</body>
+</html>
